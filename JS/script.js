@@ -5,8 +5,8 @@ const p = document.querySelector('p');
 // Define the URL of the API we will use
 const API = 'http://api.quotable.io/random';
 
-// Add an event listener to the button that triggers a function when clicked
-button.addEventListener('click', () => {
+// Define a function that fetches a random quote and updates the paragraph element
+const getQuote = () => {
   // Make a fetch request to the API, which returns a Promise
   fetch(API)
     // Convert the response to JSON format
@@ -17,4 +17,10 @@ button.addEventListener('click', () => {
     })
     // Catch any errors that occur during the fetch request
     .catch(() => alert('Error fetching quote!'));
-});
+};
+
+// Add an event listener to the button that triggers the getQuote function when clicked
+button.addEventListener('click', getQuote);
+
+// Add an event listener to the window object that triggers the getQuote function when the page loads
+window.addEventListener('load', getQuote);
