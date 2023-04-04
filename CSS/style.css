@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #4a2040;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  /* leaving some margin */
+  margin-bottom: 30px;
+}
+.wrapper {
+  width: 500px;
+  height: 300px;
+  padding-top: 50px;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 400px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+button {
+  background-color: aqua;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 0px solid;
+  border-radius: 10px;
+}
+button:hover {
+  /* changing the cursor to pointing hand */
+  cursor: pointer;
+  /* changing the text color to suitable color  */
+  color: #fff;
+  /* applying smooth effect at btn */
+  transition: all 0.5s;
+  background-color: rgb(6, 95, 95);
+}
+/* properly alliging the fetched quote */
+p {
+  text-align: justify;
+  /* applying proper margin accordoing to wrapper */
+  margin: auto 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: 450px;
+    height: 400px;
+    margin-left: 300px;
+  }
+  button:hover {
+    background-color: rgb(6, 95, 95);
+  }
+  button:active {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 500px;
+    height: 400px;
+    margin-left: 150px;
+  }
+  button:hover {
+    background-color: rgb(6, 95, 95);
+  }
+  button:active {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 400px;
+    height: 350px;
+    margin-left: 90px;
+  }
+  button:hover {
+    background-color: rgb(6, 95, 95);
+  }
+  button:active {
+    color: white;
+  }
+}
