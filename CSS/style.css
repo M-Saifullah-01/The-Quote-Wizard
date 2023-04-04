@@ -3,10 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* fixing the Bg color to body insated of container */
+body {
+  background-color: #4a2040;
+}
 .container {
   height: 100vh;
   width: 100%;
-  background-color: #4a2040;
   display: flex;
   align-items: center;
 }
@@ -50,45 +53,27 @@ p {
   /* applying proper margin accordoing to wrapper */
   margin: auto 40px;
 }
-
-@media screen and (max-width: 992px) {
+/* adjust the container height for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding-bottom: 50px;
+  }
   .wrapper {
-    width: 450px;
-    height: 400px;
-    margin-left: 300px;
-  }
-  button:hover {
-    background-color: rgb(6, 95, 95);
-  }
-  button:active {
-    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    width: 500px;
-    height: 400px;
-    margin-left: 150px;
-  }
-  button:hover {
-    background-color: rgb(6, 95, 95);
-  }
-  button:active {
-    color: white;
+/* adjust the font size of the button for smaller screens */
+@media (max-width: 480px) {
+  button {
+    font-size: 16px;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    width: 400px;
-    height: 350px;
-    margin-left: 90px;
-  }
-  button:hover {
-    background-color: rgb(6, 95, 95);
-  }
-  button:active {
-    color: white;
+/* adjust the font size of the quote for smaller screens */
+@media (max-width: 480px) {
+  p {
+    font-size: 16px;
   }
 }
