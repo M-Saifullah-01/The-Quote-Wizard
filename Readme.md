@@ -6,7 +6,6 @@ The-Quote-Wizard
 
 This is a simple web application that generates a random quote every time the user clicks the button. It uses the quotable API to fetch a random quote and display it on the page.
 
-<!-- please enter url of the Gh poages above () -->
 
 ## Getting Started
 
